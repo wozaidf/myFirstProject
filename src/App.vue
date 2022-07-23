@@ -15,7 +15,9 @@ export default {
   name: "App",
   data: function() {
     return {
-      hello: true
+      hello: true,
+  
+      
     }
   },
   // mounted() {
