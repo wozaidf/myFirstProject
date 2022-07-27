@@ -10,7 +10,7 @@
 
 export default {
     name: 'FirstComponet',
-    props: ['answer'],
+    props: ['answer'],     //引用app中父级变量
     data: function () {
         return {
             count: 0,
@@ -19,7 +19,7 @@ export default {
     },
     methods: {
         DoYouSeeMe() {
-            this.$emit('love', { color: this.count + 1 })
+            this.$emit('love', { color: this.count + 1 })  //子向父传参，其中 { color: this.count + 1 }是传出去的值
         }
     },
     watch:{

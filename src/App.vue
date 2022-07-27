@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div>            
+             <!-- //love是子组件传来的参数//answer是父组件向子组件传入的参数 -->
     <FirstComponet @love="ICanSeeYou" :answer="fatherinfo"></FirstComponet>
     <div v-if="false">
       <HelloWorld v-if="childLoading" :msg="ppx"></HelloWorld>
@@ -18,20 +19,18 @@ export default {
   },
 
   name: "App",
-  data: function () {
+  data: function () {       //data的函数式
     return {
-      fatherinfo: null,
+      fatherinfo: null,     //定义一个空变量来存放子组件传来的值
       hello: true,
       ppx: '',
       childLoading: false
     }
   },
   methods: {  
-
-    
     ICanSeeYou(childinfo) {
-      console.log('wcanseeyou', childinfo)
-      this.fatherinfo = childinfo;
+      console.log('icanseeyou', childinfo)
+      this.fatherinfo = childinfo;            //用一个父组件里一个变量来接收子组件传来的值
       this.fatherinfo.color++;
     }
   },

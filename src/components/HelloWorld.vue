@@ -21,7 +21,7 @@
 </template>
 
 <script>
-// import axios from 'axios'
+// import axios from 'axios'    网路请求
 export default {
   name: 'HelloWorld',
   props: ['msg'],//引用父级变量，
@@ -44,7 +44,7 @@ export default {
     setTimeout(() => {
       this.isshow = false
     }, 3000)
-    // this.print()
+    // this.print()         //启动网络请求
   },
   computed: {
     // 计算属性的 getter
@@ -77,6 +77,7 @@ export default {
       }, 2000)
 
     }
+    // 网路请求
     //   async print() {
     //     const res = await axios.get('http://learn.api.futureruntime.com/')
     //     console.log(res)
