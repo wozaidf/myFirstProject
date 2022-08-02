@@ -24,7 +24,7 @@
 // import axios from 'axios'    网路请求
 export default {
   name: 'HelloWorld',
-  props: ['msg'],//引用父级变量，
+  props: ['msg'],//在子组件中接受父组件传来的变量，
   data: function () {
     return {
       count: null,

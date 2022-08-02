@@ -1,6 +1,6 @@
 <template>
     <div>
-        <el-button v-on:click="DoYouSeeMe">😁点我一下看能不能看到父亲</el-button>
+        <el-button @click="DoYouSeeMe">😁点我一下看能不能看到父亲</el-button>
         {{ formatAns || '没回答我' }}
     </div>
 </template>
